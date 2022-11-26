@@ -1,0 +1,95 @@
+A continuación, se describe las funcionalidades del sistema de información para la gestión de alquiler de Barcos.
+
+El cliente, que desea reservar un barco, debe registrarse; este registro se realiza solamente una vez y en adelante el usuario ingresa a la plataforma a través de su usuario y contraseña. Una vez iniciada la sesión, el usuario puede visualizar la oferta de barcos disponibles para la fecha en la cual desea hacer el alquiler. Hecha la reserva, pueden suceder dos cosas: que el cliente rente el barco el día reservado o que el cliente desista, y para ello el cliente puede cancelar la reserva en cualquier momento sin costo alguno. El administrador se encargará de cambiar el estado en el momento de entregar del producto o de cancelar la reserva de manera unilateral en caso de no poder cumplir. También la debe cancelar si el día de la reserva el cliente no se acerca al punto.
+
+Durante el tiempo de uso, la reserva debe cambiar de estado y debe marcarse como finalizada en el momento en que el barco sea devuelto. Al devolver un barco el cliente debe calificar su experiencia y escribir algún comentario como realimentación al proceso; así la empresa sabrá en qué debe mejorar. 
+
+Una funcionalidad adicional si el tiempo de entrega lo permite será: tener es la posibilidad de enviar mensajes por parte de los clientes para obtener información, hacer sugerencias, felicitaciones o expresar su gratitud. Estos mensajes serán leídos por el usuario administrador.
+
+Modulo de seguridad 
+
+RF1: Registro de datos básicos de las personas
+•	Tipo documento
+•	Documento 
+•	Nombre completo
+•	Correo
+•	Teléfono
+•	Dirección
+•	Licencia de conducción
+•	Estado
+RF2: Registrar usuarios al sistema 
+•	Usuario
+•	Contraseña
+•	Estado
+•	Asociar una persona
+•	Asociar un rol 
+
+RF3: Gestionar los roles del sistema 
+•	Nombre
+•	Estado
+
+RF4: Asignar permisos a los roles
+•	Nombre
+•	Ruta del permiso
+
+
+
+Módulo de autos 
+
+RF1: Registrar categorías de barcos
+•	Nombre 
+•	Estado
+
+RF3: Registrar marcas de barcos
+•	Nombre 
+•	Estado
+
+RF3: Registrar barcos
+•	Placa
+•	Numero pasajeros
+•	Estado
+•	Estado préstamo
+•	Asignar categoría 
+•	Asignar marca
+
+Módulo de alquiler 
+
+RF1: Generar registro de alquiler
+•	Fecha Solicitud 
+•	Fecha Entrega
+•	Fecha Recibido
+•	Kilometraje entrega
+•	Kilometraje recibido
+•	Descripción
+•	Asociar auto
+•	Asociar un cliente 
+•	Asociar un responsable
+•	Valor a Pagar 
+•	Estado del Pago
+
+
+Módulo de administración
+
+RF1: Registrar administradores
+•	Usuario
+•	Contraseña
+•	Estado
+•	Asociar una persona
+•	Asociar un rol 
+
+
+
+
+
+
+
+
+Requerimientos NO Funcionales
+
+Framework : node js {react, angular, vue, next, express} – spring boot
+Lenguajes de programación: java – java script 
+IDE: visual studio code  - spring boot tool
+Motores de base de datos: mongodb – mysql 
+Servior: 
+
+
